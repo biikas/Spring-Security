@@ -27,7 +27,9 @@ public class RestPath {
             new AntPathRequestMatcher("/public/**"),
             new AntPathRequestMatcher("/initial/data"),
             new AntPathRequestMatcher("/check-username")
-    );
+
+
+            );
 
     public static final RequestMatcher JWT_URLS = new AndRequestMatcher(
             new NegatedRequestMatcher(PUBLIC_URLS),
